@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+  background-image: linear-gradient(to left, rgb(246, 70, 70), rgb(255, 224, 124))
+}
+
+.container {
+  line-height: 300%;
+}
+
+.header {
+  padding: 15px;
+  background-color: #fdf2f2;
+  text-align: center;
+  margin-left: auto;
+margin-right: auto;
+}
+
+.header h1 {
+  color: #222222;
+  font-size: 38px;
+  align-items: center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.content {
+  padding: 0em;
+  overflow: hidden;
+  margin-left: auto;
+margin-right: auto;
+}
+.content h2 {
+    color: #222222;
+  font-size: 25px;
+  align-items: center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.content form {
+    color: #222222;
+  font-size: 30px;
+  align-items: center;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
