@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 
-r = []
-
 def bsoup(keyword, keyword1):
+   r = []
+   
    #Britannica.com
    url="https://www.britannica.com/search?query="+ keyword1
    # Make a GET request to fetch the raw HTML content
@@ -28,10 +28,12 @@ def bsoup(keyword, keyword1):
    soup = BeautifulSoup(html_content, "lxml")
    results = soup.find("p",{}).findNext("p").get_text()
    r.append(results)
+   
+   return r
 
 keyword = input("Enter the keyword: ")
 keyword1 = keyword.replace(" ","+")
-bsoup(keyword,keyword1)
+r = bsoup(keyword,keyword1)
 
 for i in range(len(r)):
   print(i+1,". ",r[i],"\n")
